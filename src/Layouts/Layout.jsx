@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./Layout.module.css";
+import icon from "../assets/cryp.png";
 
 function Layout({ children }) {
   return (
     <>
-      <header>Crypto App</header>
+      <header>
+        <img src={icon} />
+        Setcoin
+      </header>
       {children}
       <footer>
         <p>Developed by Parsa Shokati</p>

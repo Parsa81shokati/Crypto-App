@@ -1,10 +1,35 @@
 header{
     display: flex;
+    position: fixed;
+    align-items: center;
     background-color: #001c5e;
+    height: 40px;
+    width: 100vw;
+    font-size: 20px;
+    padding-left: 15px;
+    gap: 2px;
+}
+
+img{
+    width:30px;
     height: 30px;
 }
 
 footer {
     background-color: #001c5e;
     margin-top: 90px;
+    padding-left: 20px;
+}
+
+@media (max-width:640px) {
+    header{
+        font-size: 15px;
+        height: 30px;
+        padding-left: 10px;
+    }
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    
 }
