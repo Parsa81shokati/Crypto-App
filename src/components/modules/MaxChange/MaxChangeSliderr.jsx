@@ -23,7 +23,7 @@ function Slider() {
     if (topChanges.length === 0) return;
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % topChanges.length);
-    }, 15000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [topChanges]);
 

@@ -4,6 +4,7 @@ import Search from "../modules/Search/Search";
 import Pagination from "../modules/Pagination/Pagination";
 import Chart from "../modules/Chart/Chart";
 import { CryptoContext } from "../../context/DataContext";
+import TableTitle from "../modules/Table/TableTitle";
 
 function HomePage() {
   const {
@@ -19,6 +20,7 @@ function HomePage() {
 
   return (
     <div>
+      <TableTitle />
       <Search currency={currency} setCurrency={setCurrency} />
       <TableCoin coins={coins} isLoading={isLoading} setChart={setChart} />
       <Pagination page={page} setPage={setPage} />

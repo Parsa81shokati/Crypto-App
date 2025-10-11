@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.textContainer}>
-        <h1 className={styles.title}>Finora </h1>
+        <h1 className={styles.title}>Setcoin </h1>
         <h1 className={styles.describ}>
           Smarter Financial Insights for a Changing World
         </h1>
@@ -19,7 +19,6 @@ function Hero() {
           <Slider />
         </div>
       </div>
-
       <img src={phonephoto} />
     </div>
   );

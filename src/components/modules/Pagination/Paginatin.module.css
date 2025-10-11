@@ -33,3 +33,25 @@ opacity: 0.3;
 .selected{
 background-color: #3874ff;
 }
+
+@media(max-width:650px){
+    .pagination{
+        width: 300px;
+        margin-bottom: 100px;
+        gap: 5px;
+}
+
+.pagination button{
+    width: 50px;
+    padding: 2px 3px;
+    font-size: 0.6rem;
+}
+
+.pagination p {
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.6rem;
+}
+
+}

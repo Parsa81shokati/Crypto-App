@@ -78,9 +78,15 @@ const ChartComponent = ({ data, type }) => {
           dataKey={type}
           stroke="#3874ff"
           strokeWidth="2px"
+          dot={false}
+          activeDot={{ r: 4 }}
         />
         <CartesianGrid stroke="#404042" />
-        <YAxis dataKey={type} domain={["auto", "auto"]} />
+        <YAxis
+          dataKey={type}
+          domain={["auto", "auto"]}
+          tick={{ fill: "#fff", fontSize: 10 }}
+        />
         <XAxis dataKey="data" hide />
         <Legend />
         <Tooltip />

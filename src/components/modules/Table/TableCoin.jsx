@@ -64,7 +64,7 @@ const TableRow = ({ coin, setChart }) => {
           <span>{symbol.toUpperCase()}</span>
         </div>
       </td>
-      <td>{name}</td>
+      <td className={styles.nameCell}>{name}</td>
       <td>${current_price.toLocaleString()}</td>
       <td
         className={
@@ -75,7 +75,10 @@ const TableRow = ({ coin, setChart }) => {
       </td>
       <td>{total_volume.toLocaleString()}</td>
       <td>
-        <img src={price_change_percentage_24h > 0 ? chartup : chartdown} />
+        <img
+          src={price_change_percentage_24h > 0 ? chartup : chartdown}
+          className={styles.updown}
+        />
       </td>
     </tr>
   );

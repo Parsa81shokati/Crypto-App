@@ -14,23 +14,27 @@ min-height: 1000px;
 .table th:nth-child(2),
 .table td:nth-child(2) {
   min-width: 90px;
+  text-align: center;
 }
 
 /* ستون سوم (Price) */
 .table th:nth-child(3),
 .table td:nth-child(3) {
   min-width: 90px;
+   text-align: center;
 }
 
 /* ستون پنجم (Total Volume) */
 .table th:nth-child(4),
 .table td:nth-child(4) {
   min-width: 90px;
+   text-align: center;
 }
 
 .table th:nth-child(5),
 .table td:nth-child(5) {
   min-width: 120px;
+   text-align: center;
 }
 
 
@@ -74,11 +78,104 @@ min-height: 1000px;
     color: #9fa6b7;
 }
 
+.nameCell {
+  max-width: 90px;         
+  white-space: nowrap;     
+  overflow: hidden;        
+  text-overflow: ellipsis; 
+}
+
+
 .success{
     color: #57bc7c;
 }
 .error{
     color: #d33636;
+}
+
+.updown {
+  width: 100px;
+  height: 50px;
+
+}
+
+@media(max-width:1000px){
+        /* ستون اول (Coin) */
+    .table th:nth-child(1),
+    .table td:nth-child(1) {
+        min-width: 40px;
+        padding-left: 9px;
+    }
+
+        /* ستون دوم (Name) */
+    .table th:nth-child(2),
+    .table td:nth-child(2) {
+        min-width: 40px;
+        text-align: center;
+    }
+
+        /* ستون سوم (Price) */
+    .table th:nth-child(3),
+    .table td:nth-child(3) {
+        min-width: 30px;
+        text-align: center;
+    }
+
+        /* ستون چهارم (Total Volume) */
+    .table th:nth-child(4),
+    .table td:nth-child(4) {
+        min-width: 30px;
+        text-align: center;
+    }
+
+    .table th:nth-child(5),
+    .table td:nth-child(5) {
+        min-width: 60px;
+        text-align: center;
+    }
+
+    .table th:nth-child(6),
+    .table td:nth-child(6) {
+        min-width: 40px;
+    }
+
+    .table thead{
+        border-bottom: 1px solid #fff;
+        margin-bottom: 20px;
+    }
+
+    .table th{
+        font-size: 0.8rem;
+        padding: 10px ;
+    }
+
+    .table tbody tr {
+        height: 50px;
+        border-bottom: 1px solid #465f89;
+        font-weight: 300;
+        font-size: 0.6rem;
+    }
+
+    .symbol img{
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    .symbol span{
+        font-weight: 500;
+        font-size: 0.6rem;
+    }
+
+    .updown {
+        width: 40px;
+        height: 15px;
+}
+
+    .nameCell {
+         max-width: 40px;
+}
+
 }
 
 @media (max-width:640px){
@@ -90,35 +187,40 @@ min-height: 1000px;
         /* ستون اول (Coin) */
     .table th:nth-child(1),
     .table td:nth-child(1) {
-        min-width: 40px;
+        min-width: 30px;
+        padding-left: 9px;
     }
 
         /* ستون دوم (Name) */
     .table th:nth-child(2),
     .table td:nth-child(2) {
         min-width: 30px;
+        text-align: center;
     }
 
         /* ستون سوم (Price) */
     .table th:nth-child(3),
     .table td:nth-child(3) {
         min-width: 20px;
+        text-align: center;
     }
 
-        /* ستون پنجم (Total Volume) */
+        /* ستون چهارم (Total Volume) */
     .table th:nth-child(4),
     .table td:nth-child(4) {
-        min-width: 40px;
+        min-width: 20px;
+        text-align: center;
     }
 
     .table th:nth-child(5),
     .table td:nth-child(5) {
-        min-width: 60px;
+        min-width: 50px;
+        text-align: center;
     }
 
     .table th:nth-child(6),
     .table td:nth-child(6) {
-        min-width: 60px;
+        min-width: 30px;
     }
 
 
@@ -128,25 +230,33 @@ min-height: 1000px;
     }
 
     .table th{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         padding: 10px ;
     }
 
     .table tbody tr {
-        height: 80px;
-        border-bottom: 1px solid #5b82c0;
-        font-weight: 400;
-        font-size: 0.6rem;
+        height: 50px;
+        border-bottom: 1px solid #465f89;
+        font-weight: 300;
+        font-size: 0.4rem;
     }
 
     .symbol img{
-        width: 16px;
-        height: 16px;
-        margin-right: 10px;
+        width: 13px;
+        height: 13px;
+        margin-right: 5px;
     }
 
     .symbol span{
         font-weight: 500;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
+
+    .updown {
+        width: 40px;
+        height: 15px;
+}
+
+    .nameCell {
+        max-width: 30px;}
 }

@@ -1,8 +1,8 @@
 .card{
     display: flex;
     flex-direction: column;
-    width: 210px;
-    height: 280px;
+    width: 200px;
+    height: 270px;
     background-color: #17153D;
     border-radius: 20px;
     padding: 10px;
@@ -12,7 +12,7 @@
 .card .sood{
     width: 170px;
     height: 60px;
-    margin: 30px 0 0 20px;
+    margin: 25px 0 0 20px;
 }
 
 .header{
@@ -57,7 +57,7 @@
     padding-left: 18px;
     font-size: 15px;
     opacity: 90%;
-    margin: 15px 0 20px 0;
+    margin: 14px 0 20px 0;
 
 }
 
@@ -78,7 +78,7 @@
 }
 
 .statLabel{
-    font-size: 15px;
+    font-size: 13px;
     opacity: 80%;
     margin: 0; 
     padding: 0;
@@ -102,9 +102,79 @@
 
 
 
-@media (max-width : 768px){
+@media (max-width : 1200px){
     .card{
     width: 130px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.card .sood{
+    width: 100px;
+    height: 40px;
+    margin: 20px 0 0 15px;
+}
+.header{
+    gap: 8px;
+    overflow: hidden;   
+    padding: 4px;
+}
+
+.header img{
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.coinInfo {
+  gap: 5px;
+}
+
+.symbol{
+    font-size: 16px;
+}
+
+.name{
+    font-size: 11px;
+}
+
+
+.totalvolume{
+    padding-left: 10px;
+    font-size: 11px;
+    margin: 10px 0 15px 0;
+
+}
+
+
+.price{
+    font-size: 11px;
+}
+
+.statLabel{
+    font-size: 11px;
+}
+
+.priceUp{
+    font-size: 11px;
+    margin: 0; 
+
+}
+
+.priceDown{
+    font-size: 11px;
+    margin: 0; 
+
+}
+
+}
+
+
+@media (max-width : 768px){
+    .card{
+    width: 120px;
     height: 160px;
     border-radius: 10px;
     padding: 10px;
@@ -112,7 +182,7 @@
 .card .sood{
     width: 90px;
     height: 30px;
-    margin: 20px 0 0 20px;
+    margin: 15px 0 0 15px;
 }
 .header{
     gap: 5px;
@@ -173,7 +243,7 @@
 
 @media (max-width : 640px){
     .card{
-    width: 140px;
+    width: 120px;
     height: 160px;
     border-radius: 10px;
     padding: 10px;
@@ -181,7 +251,7 @@
 .card .sood{
     width: 90px;
     height: 30px;
-    margin: 20px 0 0 20px;
+    margin: 15px 0 0 15px;
 }
 .header{
     gap: 5px;

@@ -1,0 +1,15 @@
+.text{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 240px;
+    color: #aecbf1;
+}
+
+@media(max-width:900px){
+    .text{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 120px;
+}
+}
