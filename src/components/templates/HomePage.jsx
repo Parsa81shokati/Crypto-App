@@ -1,34 +1,22 @@
-import React, { useEffect, useState } from "react";
-import TableCoin from "../modules/TableCoin";
-import Search from "../modules/Search";
-import Pagination from "../modules/Pagination";
-import Chart from "../modules/Chart";
-import { getCoinList } from "../../services/cryptoApi";
+import React, { useContext, useEffect, useState } from "react";
+import TableCoin from "../modules/Table/TableCoin";
+import Search from "../modules/Search/Search";
+import Pagination from "../modules/Pagination/Pagination";
+import Chart from "../modules/Chart/Chart";
+import { CryptoContext } from "../../context/DataContext";
 
 function HomePage() {
-  const [coins, setCoins] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [page, setPage] = useState(1);
-  const [currency, setCurrency] = useState("usd");
-  const [chart, setChart] = useState(null);
+  const {
+    coins,
+    isLoading,
+    page,
+    setPage,
+    currency,
+    setCurrency,
+    chart,
+    setChart,
+  } = useContext(CryptoContext);
 
-  useEffect(() => {
-    setIsLoading(true);
-    const getData = async () => {
-      try {
-        const res = await fetch(getCoinList(page, currency));
-        const json = await res.json();
-        setCoins(json);
-        setIsLoading(false);
-      } catch (error) {
-        console.error(error);
-        setIsLoading(false);
-      }
-    };
-    getData();
-  }, [page, currency]);
-  console.log(chart);
-  console.log(coins);
   return (
     <div>
       <Search currency={currency} setCurrency={setCurrency} />

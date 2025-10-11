@@ -1,8 +1,9 @@
 import React from "react";
-import chartup from "../../assets/chart-up.svg";
-import chartdown from "../../assets/chart-down.svg";
+import chartup from "../../../assets/chart-up.svg";
+import chartdown from "../../../assets/chart-down.svg";
+
 import styles from "./TableCoin.module.css";
-import { mareketChart } from "../../services/cryptoApi";
+import { mareketChart } from "../../../services/cryptoApi";
 
 function TableCoin({ coins, isLoading, setChart }) {
   return (

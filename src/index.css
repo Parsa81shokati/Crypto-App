@@ -28,6 +28,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: radial-gradient(circle at top left, #0759c6,#292365 , #090a1e 55%),
+              radial-gradient(circle at bottom right, #112e6d , #292365, #000000 40%);
+  background-blend-mode: screen;
+  color: white;
+  overflow-x: hidden;
 }
 
 h1 {

@@ -11,7 +11,7 @@ import {
 } from "recharts";
 
 import styles from "./chart.module.css";
-import { convertData } from "../../helper.js/convertData";
+import { convertData } from "../../../helper.js/convertData";
 
 function Chart({ chart, setChart }) {
   const [type, setType] = useState("prices");

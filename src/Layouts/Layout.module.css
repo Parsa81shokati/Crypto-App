@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    background-color: #001c5e;
+    height: 30px;
+}
+
+footer {
+    background-color: #001c5e;
+    margin-top: 90px;
+}

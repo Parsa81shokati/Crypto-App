@@ -1,0 +1,241 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 280px;
+    background-color: #17153D;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.card .sood{
+    width: 170px;
+    height: 60px;
+    margin: 30px 0 0 20px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;   
+    padding: 15px;
+}
+
+
+.header img{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.coinInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.symbol{
+    font-size: 22px;
+    margin: 0;
+}
+
+.name{
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 0; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.totalvolume{
+    padding-left: 18px;
+    font-size: 15px;
+    opacity: 90%;
+    margin: 15px 0 20px 0;
+
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+}
+  
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.price{
+    font-size: 15px;
+    margin: 0; 
+}
+
+.statLabel{
+    font-size: 15px;
+    opacity: 80%;
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+
+}
+
+.priceUp{
+    color: green;
+    font-size: 15px;
+    margin: 0; 
+
+}
+
+.priceDown{
+    color: orangered;
+    font-size: 15px;
+    margin: 0; 
+
+}
+
+
+
+@media (max-width : 768px){
+    .card{
+    width: 130px;
+    height: 160px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card .sood{
+    width: 90px;
+    height: 30px;
+    margin: 20px 0 0 20px;
+}
+.header{
+    gap: 5px;
+    overflow: hidden;   
+    padding: 4px;
+}
+
+.header img{
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.coinInfo {
+  gap: 5px;
+}
+
+.symbol{
+    font-size: 15px;
+}
+
+.name{
+    font-size: 10px;
+}
+
+
+.totalvolume{
+    padding-left: 10px;
+    font-size: 10px;
+    margin: 10px 0 15px 0;
+
+}
+
+
+.price{
+    font-size: 10px;
+}
+
+.statLabel{
+    font-size: 10px;
+}
+
+.priceUp{
+    font-size: 10px;
+    margin: 0; 
+
+}
+
+.priceDown{
+    font-size: 10px;
+    margin: 0; 
+
+}
+
+}
+
+@media (max-width : 640px){
+    .card{
+    width: 140px;
+    height: 160px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card .sood{
+    width: 90px;
+    height: 30px;
+    margin: 20px 0 0 20px;
+}
+.header{
+    gap: 5px;
+    overflow: hidden;   
+    padding: 4px;
+}
+
+.header img{
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.coinInfo {
+  gap: 5px;
+}
+
+.symbol{
+    font-size: 15px;
+}
+
+.name{
+    font-size: 10px;
+}
+
+
+.totalvolume{
+    padding-left: 10px;
+    font-size: 10px;
+    margin: 10px 0 15px 0;
+
+}
+
+
+.price{
+    font-size: 10px;
+}
+
+.statLabel{
+    font-size: 10px;
+}
+
+.priceUp{
+    font-size: 10px;
+    margin: 0; 
+
+}
+
+.priceDown{
+    font-size: 10px;
+    margin: 0; 
+
+}
+
+}

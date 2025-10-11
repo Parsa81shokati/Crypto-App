@@ -1,0 +1,152 @@
+.container{
+display: flex;
+justify-content: center;
+margin: 50px 0 100px;
+min-height: 1000px;
+}
+/* ستون اول (Coin) */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  min-width: 120px;
+}
+
+/* ستون دوم (Name) */
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  min-width: 90px;
+}
+
+/* ستون سوم (Price) */
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  min-width: 90px;
+}
+
+/* ستون پنجم (Total Volume) */
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  min-width: 90px;
+}
+
+.table th:nth-child(5),
+.table td:nth-child(5) {
+  min-width: 120px;
+}
+
+
+.table{
+    border-collapse: collapse;
+}
+
+.table thead{
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+.table th{
+    font-size: 1rem;
+    text-align: left;
+    padding: 10px ;
+}
+
+.table tbody tr {
+    height: 80px;
+    border-bottom: 1px solid #5b82c0;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.symbol{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.symbol img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.symbol span{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #9fa6b7;
+}
+
+.success{
+    color: #57bc7c;
+}
+.error{
+    color: #d33636;
+}
+
+@media (max-width:640px){
+   .container{
+        margin: 50px 0 100px;
+        min-height: 1000px;
+        }
+
+        /* ستون اول (Coin) */
+    .table th:nth-child(1),
+    .table td:nth-child(1) {
+        min-width: 40px;
+    }
+
+        /* ستون دوم (Name) */
+    .table th:nth-child(2),
+    .table td:nth-child(2) {
+        min-width: 30px;
+    }
+
+        /* ستون سوم (Price) */
+    .table th:nth-child(3),
+    .table td:nth-child(3) {
+        min-width: 20px;
+    }
+
+        /* ستون پنجم (Total Volume) */
+    .table th:nth-child(4),
+    .table td:nth-child(4) {
+        min-width: 40px;
+    }
+
+    .table th:nth-child(5),
+    .table td:nth-child(5) {
+        min-width: 60px;
+    }
+
+    .table th:nth-child(6),
+    .table td:nth-child(6) {
+        min-width: 60px;
+    }
+
+
+    .table thead{
+        border-bottom: 1px solid #fff;
+        margin-bottom: 20px;
+    }
+
+    .table th{
+        font-size: 0.7rem;
+        padding: 10px ;
+    }
+
+    .table tbody tr {
+        height: 80px;
+        border-bottom: 1px solid #5b82c0;
+        font-weight: 400;
+        font-size: 0.6rem;
+    }
+
+    .symbol img{
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+
+    .symbol span{
+        font-weight: 500;
+        font-size: 0.7rem;
+    }
+}

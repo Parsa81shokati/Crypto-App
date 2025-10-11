@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { searchCoin } from "../../services/cryptoApi";
+import { searchCoin } from "../../../services/cryptoApi";
 import styles from "./Search.module.css";
 
 function Search({ currency, setCurrency }) {

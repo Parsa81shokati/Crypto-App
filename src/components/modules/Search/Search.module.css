@@ -63,3 +63,48 @@
     width: 25px;
     height: 25px;
 }
+
+@media (max-width:640px){
+
+.searchBox input {
+    width: 150px;
+    height: 10px;
+    font-size: 0.7rem;
+}
+
+.searchBox select {
+    margin-left: 20px;
+    padding: 10px 10px;
+    height: 10px;
+    font-size: 0.7rem;
+}
+
+.searchResult {
+    top: 40px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #22262e;
+    padding: 5px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+.searchResult li{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #22262e;
+}
+
+.searchResult li img{
+    width: 18px;
+    height: 18px;
+}
+
+.searchResult li p {
+    font-size: 0.6rem;
+}
+
+}
