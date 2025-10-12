@@ -37,7 +37,7 @@ function MaxChangeCard({ coin }) {
         </div>
       </div>
       <img
-        src={coin.price_change_percentage_24h > 0 ? chartup : chartdown}
+        src={coin.price_change_percentage_24h > 0 ? chartdown : chartup}
         className={styles.sood}
       />
     </div>

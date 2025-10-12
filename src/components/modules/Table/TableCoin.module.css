@@ -1,7 +1,7 @@
 .container{
 display: flex;
 justify-content: center;
-margin: 50px 0 100px;
+margin: 30px 0 100px;
 min-height: 1000px;
 }
 /* ستون اول (Coin) */
@@ -99,6 +99,15 @@ min-height: 1000px;
 
 }
 
+.tableloading{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @media(max-width:1000px){
         /* ستون اول (Coin) */
     .table th:nth-child(1),
@@ -170,10 +179,14 @@ min-height: 1000px;
     .updown {
         width: 40px;
         height: 15px;
-}
+    }
 
     .nameCell {
-         max-width: 40px;
+        max-width: 40px;
+    }
+
+    .tableloading{
+    transform: scale(0.6);
 }
 
 }
@@ -237,8 +250,8 @@ min-height: 1000px;
     .table tbody tr {
         height: 50px;
         border-bottom: 1px solid #465f89;
-        font-weight: 400;
-        font-size: 0.4rem;
+        font-weight: 500;
+        font-size: 0.5rem;
     }
 
     .symbol img{
@@ -248,7 +261,7 @@ min-height: 1000px;
     }
 
     .symbol span{
-        font-weight: 500;
+        font-weight: 600;
         font-size: 0.5rem;
     }
 

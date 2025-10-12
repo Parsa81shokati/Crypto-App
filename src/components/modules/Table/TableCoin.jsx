@@ -4,12 +4,13 @@ import chartdown from "../../../assets/chart-down.svg";
 
 import styles from "./TableCoin.module.css";
 import { mareketChart } from "../../../services/cryptoApi";
+import { FadeLoader } from "react-spinners";
 
-function TableCoin({ coins, isLoading, setChart }) {
+function TableCoin({ coins, isLoading, setChart, currency }) {
   return (
     <div className={styles.container}>
       {isLoading ? (
-        <h1>loading...</h1>
+        <FadeLoader color="#38a9e3" className={styles.tableloading} />
       ) : (
         <table className={styles.table}>
           <thead>
@@ -24,7 +25,12 @@ function TableCoin({ coins, isLoading, setChart }) {
           </thead>
           <tbody>
             {coins.map((coin) => (
-              <TableRow coin={coin} key={coin.id} setChart={setChart} />
+              <TableRow
+                coin={coin}
+                key={coin.id}
+                setChart={setChart}
+                currency={currency}
+              />
             ))}
           </tbody>
         </table>
@@ -35,7 +41,7 @@ function TableCoin({ coins, isLoading, setChart }) {
 
 export default TableCoin;
 
-const TableRow = ({ coin, setChart }) => {
+const TableRow = ({ coin, setChart, currency }) => {
   const {
     id,
     name,
@@ -65,7 +71,11 @@ const TableRow = ({ coin, setChart }) => {
         </div>
       </td>
       <td className={styles.nameCell}>{name}</td>
-      <td>${current_price.toLocaleString()}</td>
+      <td>
+        {currency === "eur" ? "€" : currency === "jpy" ? "¥" : "$"}
+        {current_price.toLocaleString()}
+        {current_price.toLocaleString()}
+      </td>
       <td
         className={
           price_change_percentage_24h > 0 ? styles.success : styles.error

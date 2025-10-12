@@ -72,6 +72,15 @@
 }
 
 
+.searchloading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @media(max-width:1000px){
     .searchBox input {
         width: 150px;
@@ -160,6 +169,10 @@
 
 .searchResult li p {
     font-size: 0.6rem;
+}
+
+.searchloading {
+    transform: scale(0.6); 
 }
 
 }

@@ -11,10 +11,10 @@ function Hero() {
         <h1 className={styles.describ}>
           Smarter Financial Insights for a Changing World
         </h1>
-        <p className={styles.subtitle}>
+        {/* <p className={styles.subtitle}>
           Turn complex market data into clear, actionable insights empowering
           smarter financial decisions every day.
-        </p>
+        </p> */}
         <div className={styles.slider}>
           <Slider />
         </div>

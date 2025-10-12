@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { searchCoin } from "../../../services/cryptoApi";
 import styles from "./Search.module.css";
+import { FadeLoader } from "react-spinners";
 
 function Search({ currency, setCurrency }) {
   const [text, setText] = useState("");
@@ -53,7 +54,9 @@ function Search({ currency, setCurrency }) {
       </select>
       {(!!coins.length || isLoading) && (
         <div className={styles.searchResult}>
-          {isLoading && <span>loading</span>}
+          {isLoading && (
+            <FadeLoader color="#38a9e3" className={styles.searchloading} />
+          )}
           <ul>
             {coins.map((coin) => (
               <li key={coin.id}>

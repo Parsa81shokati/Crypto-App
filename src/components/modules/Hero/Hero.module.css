@@ -9,11 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 .title{
     font-size: 70px;
-    color: #0d0d60;
+    color: white;
+    
 }
 
 .describ{
@@ -36,10 +39,8 @@
 
 .slider {
   margin-left: 40px ;
+  margin-top: 50px;
 }
-
-
-
 
 @media(max-width:1000px){
     .hero img{

@@ -1,18 +1,18 @@
 .card{
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 270px;
+    width: 180px;
+    height: 250px;
     background-color: #17153D;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
     font-family: 'Arial', sans-serif;
 }
 
 .card .sood{
-    width: 170px;
-    height: 60px;
-    margin: 25px 0 0 20px;
+    width: 130px;
+    height: 40px;
+    margin: 22px 0 0 20px;
 }
 
 .header{
@@ -25,8 +25,8 @@
 
 
 .header img{
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     border-radius: 20px;
     margin-bottom: 5px;
     object-fit: cover;
@@ -35,17 +35,17 @@
 .coinInfo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   overflow: hidden;
 }
 
 .symbol{
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
 }
 
 .name{
-    font-size: 12px;
+    font-size: 11px;
     opacity: 0.8;
     margin: 0; 
     white-space: nowrap;
@@ -57,7 +57,7 @@
     padding-left: 18px;
     font-size: 15px;
     opacity: 90%;
-    margin: 14px 0 20px 0;
+    margin: 10px 0 15px 0;
 
 }
 
@@ -78,7 +78,7 @@
 }
 
 .statLabel{
-    font-size: 13px;
+    font-size: 12px;
     opacity: 80%;
     margin: 0; 
     padding: 0;
@@ -87,7 +87,7 @@
 }
 
 .priceUp{
-    color: green;
+    color: rgb(0, 179, 0);
     font-size: 15px;
     margin: 0; 
 
