@@ -64,9 +64,9 @@ const TableRow = ({ coin, setChart, currency }) => {
   };
 
   return (
-    <tr>
+    <tr onClick={showHandler}>
       <td>
-        <div onClick={showHandler} className={styles.symbol}>
+        <div className={styles.symbol}>
           <img src={image} alt={name} />
           <span>{symbol.toUpperCase()}</span>
         </div>
