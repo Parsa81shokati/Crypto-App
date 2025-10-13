@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <CryptoProvider>
-        {/* <Layout> */}
-        <Hero />
-        <HomePage />
-        {/* </Layout> */}
+        <Layout>
+          <Hero />
+          <HomePage />
+        </Layout>
       </CryptoProvider>
     </>
   );

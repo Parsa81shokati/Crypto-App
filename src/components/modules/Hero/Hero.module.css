@@ -32,9 +32,10 @@
     margin-bottom: 60px;
 }
 
-.hero img{
+.phonephoto{
     width: 540px;
     height: 540px;
+    padding-top: 30px;
 }
 
 .slider {
@@ -43,7 +44,7 @@
 }
 
 @media(max-width:1000px){
-    .hero img{
+    .phonephoto{
         width: 400px;
         height: 400px;
     }
@@ -73,7 +74,7 @@
         margin-bottom: 30px;
     }
 
-    .hero img{
+    .phonephoto{
         width: 300px;
         height: 300px;
     }
@@ -81,8 +82,9 @@
 
 @media(max-width: 640px){
     .hero{
-        flex-direction: column;
-        padding: 65px 40px;
+        /* flex-direction: column; */
+        position: relative;
+        padding: 65px 8px;
         gap: 20px;
     }
 
@@ -101,12 +103,18 @@
         margin-bottom: 40px;
     }
 
-    .hero img{
-        width: 300px;
-        height: 300px;
+    .phonephoto{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 210px;
+       right: 0.25%;
     }
     .slider{
-        margin: 40px auto 40px auto; /* مرکز افقی صفحه */
+          width: 100px;
+    height: 140px;
+        /* margin: 40px auto 40px 20px;  */
+        margin-left: 5px ;
         width: fit-content;
 
     }

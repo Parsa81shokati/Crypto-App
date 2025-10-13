@@ -19,7 +19,7 @@ function Hero() {
           <Slider />
         </div>
       </div>
-      <img src={phonephoto} />
+      <img src={phonephoto} className={styles.phonephoto} />
     </div>
   );
 }

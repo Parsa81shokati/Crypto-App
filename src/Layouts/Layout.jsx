@@ -5,7 +5,10 @@ import icon from "../assets/cryp.png";
 function Layout({ children }) {
   return (
     <>
-      <header>Setcoin</header>
+      <header>
+        <img src={icon} alt="Setcoin logo" className={styles.icon} />
+        Setcoin
+      </header>
       {children}
       <footer>
         <p>Developed by Parsa Shokati</p>

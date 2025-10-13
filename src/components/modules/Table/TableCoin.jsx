@@ -81,7 +81,7 @@ const TableRow = ({ coin, setChart, currency }) => {
           price_change_percentage_24h > 0 ? styles.success : styles.error
         }
       >
-        {price_change_percentage_24h.toFixed(2)}%
+        {price_change_percentage_24h?.toFixed(2)}%
       </td>
       <td>{total_volume.toLocaleString()}</td>
       <td>

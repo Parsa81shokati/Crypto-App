@@ -27,7 +27,7 @@ function MaxChangeCard({ coin }) {
                 : styles.priceDown
             }
           >
-            ({coin.price_change_percentage_24h.toFixed(2)}%)
+            ({coin.price_change_percentage_24h?.toFixed(2)}%)
           </p>
           <p className={styles.statLabel}>24H change</p>
         </div>

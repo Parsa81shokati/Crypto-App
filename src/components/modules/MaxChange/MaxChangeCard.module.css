@@ -243,15 +243,15 @@
 
 @media (max-width : 640px){
     .card{
-    width: 120px;
-    height: 160px;
+    width: 100px;
+    height: 140px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 6px;
 }
 .card .sood{
-    width: 90px;
-    height: 30px;
-    margin: 15px 0 0 15px;
+    width: 80px;
+    height: 25px;
+    margin: 10px 0 0 10px;
 }
 .header{
     gap: 5px;
@@ -272,38 +272,38 @@
 }
 
 .symbol{
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .name{
-    font-size: 10px;
+    font-size: 9px;
 }
 
 
 .totalvolume{
     padding-left: 10px;
     font-size: 10px;
-    margin: 10px 0 15px 0;
+    margin: 7px 0 12px 0;
 
 }
 
 
 .price{
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .statLabel{
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .priceUp{
-    font-size: 10px;
+    font-size: 9px;
     margin: 0; 
 
 }
 
 .priceDown{
-    font-size: 10px;
+    font-size: 9px;
     margin: 0; 
 
 }
