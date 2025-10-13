@@ -7,6 +7,7 @@ import { mareketChart } from "../../../services/cryptoApi";
 import { FadeLoader } from "react-spinners";
 
 function TableCoin({ coins, isLoading, setChart, currency }) {
+  console.log(coins);
   return (
     <div className={styles.container}>
       {isLoading ? (
@@ -83,7 +84,7 @@ const TableRow = ({ coin, setChart, currency }) => {
       >
         {price_change_percentage_24h?.toFixed(2)}%
       </td>
-      <td>{total_volume.toLocaleString()}</td>
+      <td>{total_volume?.toLocaleString()}</td>
       <td>
         <img
           src={price_change_percentage_24h > 0 ? chartup : chartdown}

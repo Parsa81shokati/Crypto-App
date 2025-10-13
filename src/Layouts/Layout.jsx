@@ -11,7 +11,7 @@ function Layout({ children }) {
       </header>
       {children}
       <footer>
-        <p>Developed by Parsa Shokati</p>
+        <p>💻 Developed by Parsa Shokati </p>
       </footer>
     </>
   );

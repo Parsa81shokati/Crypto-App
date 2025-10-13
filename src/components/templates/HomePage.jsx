@@ -16,19 +16,30 @@ function HomePage() {
     setCurrency,
     chart,
     setChart,
+    searchedCoin,
+    setSearchedCoin,
   } = useContext(CryptoContext);
+
+  const displayCoins = searchedCoin ? [searchedCoin] : coins;
 
   return (
     <div>
       <TableTitle />
-      <Search currency={currency} setCurrency={setCurrency} />
+      <Search
+        currency={currency}
+        setCurrency={setCurrency}
+        setSearchedCoin={setSearchedCoin}
+      />
       <TableCoin
-        coins={coins}
+        coins={
+          searchedCoin ? coins.filter((c) => c.id === searchedCoin) : coins
+        }
         isLoading={isLoading}
         setChart={setChart}
         currency={currency}
       />
-      <Pagination page={page} setPage={setPage} />
+
+      {!searchedCoin && <Pagination page={page} setPage={setPage} />}
       {!!chart && <Chart chart={chart} setChart={setChart} />}
     </div>
   );

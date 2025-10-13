@@ -3,16 +3,21 @@ import { searchCoin } from "../../../services/cryptoApi";
 import styles from "./Search.module.css";
 import { FadeLoader } from "react-spinners";
 
-function Search({ currency, setCurrency }) {
+function Search({ currency, setCurrency, setSearchedCoin }) {
   const [text, setText] = useState("");
   const [coins, setCoins] = useState([]);
   const [isLoading, setIsloading] = useState(false);
+  const [selectedCoin, setSelectedCoin] = useState(null);
 
   useEffect(() => {
+    if (selectedCoin) return;
     const controller = new AbortController();
     setCoins([]);
     if (!text) {
       setIsloading(false);
+      setSearchedCoin(null);
+      setCoins([]);
+
       return;
     }
 
@@ -38,20 +43,35 @@ function Search({ currency, setCurrency }) {
     search();
     return () => controller.abort();
   }, [text]);
+
+  const clickHandler = (coin) => {
+    setSelectedCoin(coin);
+    setSearchedCoin(coin.id);
+    setText(coin.name);
+
+    setCoins([]);
+  };
+
   console.log(coins);
+
   return (
     <div className={styles.searchBox}>
       <input
         type="text"
         placeholder="search"
         value={text}
-        onChange={(e) => setText(e.target.value)}
+        onChange={(e) => {
+          setText(e.target.value);
+          setSelectedCoin(null);
+          setSearchedCoin(null);
+        }}
       />
       <select value={currency} onChange={(e) => setCurrency(e.target.value)}>
         <option value="usd">USD</option>
         <option value="eur">EUR</option>
         <option value="jpy">JPY</option>
       </select>
+
       {(!!coins.length || isLoading) && (
         <div className={styles.searchResult}>
           {isLoading && (
@@ -59,7 +79,7 @@ function Search({ currency, setCurrency }) {
           )}
           <ul>
             {coins.map((coin) => (
-              <li key={coin.id}>
+              <li key={coin.id} onClick={() => clickHandler(coin)}>
                 <img src={coin.thumb} alt={coin.name} /> <p>{coin.name}</p>
               </li>
             ))}

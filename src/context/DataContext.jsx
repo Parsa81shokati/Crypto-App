@@ -5,6 +5,7 @@ export const CryptoContext = createContext();
 
 function CryptoProvider({ children }) {
   const [coins, setCoins] = useState([]);
+  const [searchedCoin, setSearchedCoin] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [currency, setCurrency] = useState("usd");
@@ -37,8 +38,10 @@ function CryptoProvider({ children }) {
       setCurrency,
       chart,
       setChart,
+      searchedCoin,
+      setSearchedCoin,
     }),
-    [coins, isLoading, page, currency, chart]
+    [coins, isLoading, page, currency, chart, searchedCoin]
   );
 
   return (
