@@ -23,8 +23,9 @@ footer {
     height: 40px;
     width: 100vw;
     margin-top: 90px;
-    padding-left: 20px;
+  
 }
+
 
 @media (max-width:640px) {
     header{

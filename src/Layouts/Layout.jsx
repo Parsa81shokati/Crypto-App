@@ -10,7 +10,7 @@ function Layout({ children }) {
         Setcoin
       </header>
       {children}
-      <footer>
+      <footer className={styles.footText}>
         <p>💻 Developed by Parsa Shokati </p>
       </footer>
     </>
