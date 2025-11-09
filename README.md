@@ -1,16 +1,15 @@
-# React + Vite
+### 📈 Crypto Dashboard  
+**React.js / TailwindCSS / Axios / Recharts / CoinGecko API / useState**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time cryptocurrency dashboard that visualizes market data using CoinGecko's REST API.
 
-Currently, two official plugins are available:
+#### 🔹 Features:
+- Integrated **CoinGecko API** to fetch live crypto market data
+- **Search**, **Pagination**, and **Currency Selector** for dynamic asset discovery
+- Interactive **7-day price, market cap, and volume charts** using Recharts
+- Managed UI state using **useState** for efficient updates
+- Fully **responsive layout** built with TailwindCSS for seamless use across devices
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### 🔗 Online Demo :
+- Live Demo: _https://crypto81-app.netlify.app/_
 
-## React Compiler
-
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
